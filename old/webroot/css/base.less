@@ -1,0 +1,94 @@
+/*
+ * Basic structural layout and page templates
+ * ------------------------------------------------------------------------------------------- */
+
+
+// STRUCTURAL LAYOUT
+// -----------------
+
+html, body {
+  background-color: #efefee;
+}
+body {
+  background:#F3F2EF url(gfx/bg.png) repeat top left;
+  margin: 0;
+  #font > .sans-serif(normal,@basefont,@baseline);
+  color: @grayDark;
+  padding-top:50px;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1;
+}
+
+.container:before, .container:after {
+  display: table;
+  content: "";
+  zoom: 1;
+  *display: inline;
+}
+.container:after {
+  clear: both;
+}
+
+.content {}
+  
+  
+/* DEFAULT FOR PAGES */
+
+.main {
+  width:555px;
+  float:left;
+  margin-right:30px;
+}
+
+.sidebar {
+  width:355px;
+  float:left;
+}
+
+/* SINGLE IMAGE */
+
+.single {
+  .main {
+    width:655px;
+    float:left;
+    margin-right:30px;
+  }
+  .sidebar {
+    width:255px;
+    float:left;
+  }
+}
+
+footer {
+  
+}
+
+:focus{outline:none;}
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// BASE STYLES
+// -----------
+
+// Links
+a {
+  color: @linkColor;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+  &:hover {
+    color: @linkColorHover;
+    text-decoration: underline;
+  }
+}

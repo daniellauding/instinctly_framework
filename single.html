@@ -1,0 +1,181 @@
+<!doctype html>
+<head>
+	<title>Instinctly</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name"Author" content="Apton">
+	
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="webroot/js/jquery.include.min.js"></script>
+	<script src="webroot/js/bootstrap-twipsy.js"></script>
+	<script src="webroot/js/bootstrap-popover.js"></script>
+	
+	<script src="webroot/js/scripts.js"></script>
+	
+  <link rel="stylesheet/less" href="webroot/css/imports.less">
+  
+  <script src="webroot/js/less-1.1.3.min.js"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+      less.env = "development";
+      less.watch();
+  </script>
+  
+  <link rel="shortcut icon" href="webroot/favicon.ico">
+	
+</head>
+
+  <header>
+    <span data-src="views/elements/header.html"></span>
+  </header>
+
+	<div class="container">
+    <div class="content single">
+      <div class="page-header">
+        <h1 id="ImageEditTitle" class="edit_trigger">img_4e3fa9210a375asdasdsadasdasdasdasdadadsasd</h1>
+        
+        <div class="field edit-title hide">
+  				<fieldset class="edit-title">
+  					<label for="">Title</label>
+  					<input type="text" value="desktopadsasdadasdasdasdsadadsas" name="data[Image][title]" id="ImageTitleId" placeholder="desktopadsasdadasdasdasdsadadsas">
+  					<span id="image_title_count">0</span>
+  					<input type="submit" value="Save" class="btn small submit" id="submitItem"> or <a href="#" class="cancel">Cancel</a>
+  				</fieldset>
+  			</div>
+        
+        <span>Uploaded 2011-09-29</span>
+      </div>
+      
+      <div class="page-content">
+        
+        <div class="main">
+          
+              <div class="actions">
+                
+                <div class="toolbar">
+          				<a class="add-moodboard" href="#" rel="twipsy" title="Add to Moodboard" data-content="Add to Moodboard">Add to Moodboard</a>
+
+          				<a class="view-large" href="/images/view/51" rel="twipsy" title="View All Sizes" data-content="View All Sizes">All sizes</a>
+          				
+          				<span class="pop">
+            				<a href="#" class="url noUrl url-links" id="ImageEditUrl" title="testar" data-content="And here's some amazing content. It's very engaging. right?">
+                      Permalink
+            				</a>
+            				
+            				<div class="edit-url-holder">
+              				<a href="" class="edit_trigger" id="ImageOpenEditUrl">Edit link</a> or
+              				<a href="" target="_blank" id="ImageOpenUrl">Open link</a>
+              			</div>
+          				</span>
+          				
+          			</div>
+          			
+          			<div class="select-collection">
+          				<div class="input select">
+          					<label for="ImageCategoryId">öööööNavigations</label>
+          					<select class="category_options_list" id="ImageCategoryId" name="data[Image][category_id]" selected="selected">
+          					<option value="24" class="collection-24">asdasd</option><option value="27" class="collection-27">asdasdasdasdasdasdasdasdasdasdas</option><option value="28" class="collection-28">asdf</option><option value="7" class="collection-7">Breadcrumbskasdasdasdasdasdasdas</option><option value="9" class="collection-9">Comments</option><option value="26" class="collection-26">Dropdowns</option><option value="34" class="collection-34">Färger</option><option value="14" class="collection-14">Header</option><option value="33" class="collection-33">hohohohohohoohohohohohohohohohoh</option><option value="23" class="collection-23">kk</option><option value="25" class="collection-25">Logos</option><option value="35" class="collection-35">Onboarding</option><option value="11" class="collection-11">Sixtens hörna</option><option value="16" class="collection-16">Tabbar</option><option value="15" class="collection-15">Tabs</option><option value="29" class="collection-29">Testar</option><option value="12" class="collection-12">Whole pages</option><option value="6" class="collection-6">Ötikol</option><option value="10" class="collection-10">öööööNavigations</option><option class="separator" value="-1">---------------------------</option>
+          					<option value="-1" class="add-new-collection js-add-collection">Add Collection</option>
+          					</select>
+          				</div>
+          			</div>
+                
+              </div><!-- end manage -->
+              
+              <div class="big-image">
+          			<div class="big-image-inner">
+          				<div class="thumbnail-image">
+          					<img src="webroot/dummy/big.jpg" class="no-rounded-img">
+          				</div>
+          			</div>
+          		</div>
+          		
+            <div class="settings">
+          		
+          		<form id="ImageEditForm" method="post" action="/images/edit" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"></div>		<input type="hidden" name="data[Image][id]" value="51" id="ImageId">
+          		
+              <!-- <div class="url">
+
+                <a href="#" class="url noUrl" id="ImageEditUrl">Add URL</a>
+
+                <div class="edit-url-holder">
+                  <a href="" class="edit_trigger" id="ImageOpenEditUrl">Edit link</a>
+                  <a href="" target="_blank" id="ImageOpenUrl">Open link</a>
+                </div>
+
+                <div class="field edit-url">
+                  <fieldset class="">
+                    <label for="">Url</label>
+                    <input type="url" id="ImageUrlId" name="data[Image][url]" value="">
+                  </fieldset>
+                </div>
+
+              </div> -->
+
+          		<div class="description">
+          			<p id="ImageEditDescription" class="edit_trigger">No description added.</p>
+
+          			<div class="field edit-description hide">
+          				<fieldset class="">
+          					<label for="">Description</label>
+          					<textarea rows="5" cols="95" name="data[Image][description]" id="ImageDescId" class="large"></textarea>
+          				</fieldset>
+
+          				<input type="submit" value="Save" class="btn magenta small submit" id="submitItem"> or <a href="#" id="cancelTitle" class="cancel">Cancel</a>
+          			</div>
+          		</div>
+          		</form>
+              
+            </div>
+          
+        </div>
+        
+        <div class="sidebar">
+          
+          <div class="entry tags" id="profile-taglist">
+      			<div class="entry-header">
+      				<h2>Tags</h2>
+      			</div>
+
+      			<a id="AddImageTag" class="add-tag-link" href="#" rel="twipsy" title="Add tags" data-content="Add tags">Add tags</a>
+
+      			<div class="field">
+      			  
+              <ul class="tagslist">
+
+              	<li class="tag-88"><span class="tag-wrapper"><a href="/tags/view/88">jag</a><a class="remove-tag">x</a></span></li>
+              	<li class="tag-112"><span class="tag-wrapper"><a href="/tags/view/112">lagger</a><a class="remove-tag">x</a></span></li>
+              	<li class="tag-111"><span class="tag-wrapper"><a href="/tags/view/111">taggar</a><a class="remove-tag">x</a></span></li>
+              	<li class="tag-91"><span class="tag-wrapper"><a href="/tags/view/91">till</a><a class="remove-tag">x</a></span></li>
+              	<li class="tag-113"><span class="tag-wrapper"><a href="/tags/view/113">tre</a><a class="remove-tag">x</a></span></li>
+              
+              </ul>
+      				
+      				<p class="no-tags">No tags added yet</p>
+
+      				<div class="add-tags" id="add-tag-field">
+      					<fieldset class="add-tags">
+      						<label for="">Tag</label>
+      						<input type="text" name="data[Tag][tags]" class="large" value="" placeholder="Enter tags">
+      						<a href="#" id="cancelInput">x</a>
+      					</fieldset>
+      				</div>
+      				
+      			</div>
+      		</div>
+      
+          <input type="submit" value="Delete image" name="data[User][submit]" class="btn remove-image" id="">
+                  
+        </div>
+      
+        
+      </div>
+            
+    </div>  
+	</div>
+	
+	<footer>
+    <span data-src="views/elements/footer.html"></span>
+	</footer>
+
+</body>
+</html>
