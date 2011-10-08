@@ -1,1 +1,62 @@
-asd
+<!doctype html>
+<head>
+	<title>Instinctly</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name"Author" content="Apton">
+	
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="webroot/js/jquery.include.min.js"></script>
+	<script src="webroot/js/bootstrap-modal.js"></script>
+	<script src="webroot/js/bootstrap-twipsy.js"></script>
+	<script src="webroot/js/bootstrap-popover.js"></script>
+	
+	<script src="webroot/js/scripts.js"></script>
+	
+	
+  <link rel="stylesheet/less" href="webroot/css/imports.less">
+  
+  <script src="webroot/js/less-1.1.3.min.js"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+      less.env = "development";
+      less.watch();
+  </script>
+  
+  <link rel="shortcut icon" href="webroot/favicon.ico">
+	
+</head>
+
+  <header>
+    <span data-src="views/elements/header.html"></span>
+  </header>
+
+	<div class="container">
+    <div class="content">
+      <div class="page-header">
+        <span data-src="views/elements/widgets/alert-message.html"></span>
+        <h1>Dashboard <small>Your latest uploads</small></h1>
+      </div>
+      
+      <div class="page-content">
+        
+        <span data-src="views/elements/list-items.html"></span>
+        
+      </div>
+            
+    </div>  
+	</div>
+	
+	<footer>
+    <span data-src="views/elements/footer.html"></span>
+	</footer>
+
+  <!-- Load modal windows -->
+
+  <div id="settings" class="modal hide">
+    <span data-src="views/elements/modals/settings.html"></span>
+  </div>
+  
+  <!-- /Load modal windows -->
+
+</body>
+</html>
