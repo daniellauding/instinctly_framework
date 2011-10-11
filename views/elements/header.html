@@ -37,7 +37,7 @@
   			<a href="#">You</a> 
   				<ul>
   					<li><a data-keyboard="true" data-backdrop="true" data-controls-modal="settings">Your account</a></li>
-  					<li><a id="show_invite_overlay" href="#">Invites <span>12</span></a></li>
+  					<li><a data-keyboard="true" data-backdrop="true" data-controls-modal="invites">Invites <span>12</span></a></li>
             <li><a href="#">Log out</a></li>
   				</ul> 
   		</li>
@@ -46,3 +46,16 @@
 
   </div> 
 </div>
+
+<!-- Load modal windows -->
+
+<div id="settings" class="modal hide">
+  <span data-src="../elements/modals/settings.html"></span>
+</div>
+
+
+<div id="invites" class="modal hide">
+  <span data-src="../elements/modals/invites.html"></span>
+</div>
+
+<!-- /Load modal windows -->
