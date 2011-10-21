@@ -692,33 +692,18 @@ div.entry {
 // ------------
 
 .single {
-  h1#ImageEditTitle:hover, #ImageEditForm p#ImageEditDescription:hover {
+  h1:hover, p#ImageEditDescription:hover {
     cursor:text;
   	background:rgba(64,47,82,0.15);
   }
   .page-header {
     h1{width:83%;padding:1px 5px;} 
     span {}
-    .edit-title {
-      padding:4px 2px;
-      fieldset {margin:0;padding:0;
+    .input {
+      width:650px;
       position:relative;
-      input#ImageTitleId {
-        width:530px;
-      }
-      #image_title_count {
-        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
-        .border-radius(17px);
-        color: #FFFFFF;
-        font-size: 10px;
-        padding: 4px 6px;
-        position: absolute;
-        right: 415px;
-        text-align: center;
-        text-decoration: none;
-        top: 36px;
-      }
-    }
+      padding:4px 2px;
+      input {width:530px;padding-right:35px;}
     }
   }
   .actions {
@@ -730,44 +715,40 @@ div.entry {
       position:absolute;
       left:0;
       top:0;
+      
       a.add-moodboard {
-      	width:42px;
-      	height:42px;
       	background:#E4E3DF url(../css/gfx/add-to-moodboard.png) no-repeat 13px 10px;
-      	margin:2px 4px;
-      	text-indent:-9999px;
-      	display:inline-block;
-      	border:1px solid white;
-      	.border-radius(12px);
-      	.box-shadow(0px 0px 3px #c0bfbc);
       	&:hover {
         	background:#E4E3DF url(../css/gfx/add-to-moodboard-hover.png) no-repeat 13px 8px;
         }
       }
+      
+      a.like {
+      	background:#E4E3DF url(../css/gfx/like.png) no-repeat 11px 11px;
+      	&:hover {
+        	background:#E4E3DF url(../css/gfx/like-hover.png) no-repeat 11px 9px;
+        }
+      }
+      
     	a.view-large {
-      	width:42px;
-      	height:42px;
       	background:#E4E3DF url(../css/gfx/view-large.png) no-repeat 11px 11px;
-      	margin:2px 4px;
-      	text-indent:-9999px;
-      	display:inline-block;
-      	border:1px solid white;
-      	.border-radius(12px);
-      	.box-shadow(0px 0px 3px #c0bfbc);
       	&:hover {
       		background:#E4E3DF url(../css/gfx/view-large-hover.png) no-repeat 11px 9px;
       	}
       }
+      
+      a.edit-thumbnail {
+      	background:#E4E3DF url(../css/gfx/thumbnails-normal.png) no-repeat 11px 11px;
+      	&:hover {
+      		background:#E4E3DF url(../css/gfx/thumbnails-hover.png) no-repeat 11px 9px;
+      	}
+      }
+      
       a.url {
-        width:42px;
-      	height:42px;
-      	background:#E4E3DF;
-      	margin:2px 4px;
-      	text-indent:-9999px;
-      	display:inline-block;
-      	border:1px solid white;
-      	.border-radius(12px);
-      	.box-shadow(0px 0px 3px #c0bfbc);
+      	background:#E4E3DF url(../css/gfx/url_normal.png) no-repeat 11px 11px;
+      	&:hover {
+      		background:#E4E3DF url(../css/gfx/url_hover.png) no-repeat 11px 9px;
+      	}
       }
     }
     .select-collection {
@@ -791,11 +772,32 @@ div.entry {
     	margin:2px 5px 24px 6px;
     	.input {
     	  position:relative;
+    	  label {
+          line-height:2.3em;
+          text-indent:46px;
+          height:34px;
+    	    width:100%;
+    	    text-align:left;
+    	  }
     	  select {
+    	    position:absolute;
+    	    top:0;
       	  opacity:0;
       	  width:100%;
       	  height:40px;
       	  vertical-align:top;
+      	  .divider {
+      	    color:@grayLight;
+      	  }
+      	  option {
+            padding:9px 0px 9px 10px;
+            &.divider {
+              padding:0;
+              text-align:center;
+            }
+            &:hover{background:red;}
+      	  }
+      	.add-new-collection{text-align:center;font-weight:bold;}
       	}
     	}
     	&:after {/* ADD DROPDOWN ARROW LEVEL 1 */
@@ -817,20 +819,11 @@ div.entry {
       }
     }
   }
-  .settings {
-    margin:0 10px;
-    small {
-      margin:0px 0 0;
-      font-size:10px;
-      color:@grayLight;
-    }
-  }
+
   .description {
+    padding:0 8px;
     p {padding:1px 5px;}
-    fieldset{
-      padding:4px 2px;
-      margin:4px 0 5px;
-    }
+    textarea {margin-bottom:5px;width:100%;}
   }
 }
 
@@ -1174,7 +1167,6 @@ div.item {
 		a{text-decoration:none;}
   }
   small {
-    font-size: @basefont * .95;
     text-transform:uppercase;
     position: absolute;
 		padding: 2px 6px 3px;
@@ -1312,7 +1304,7 @@ footer {
 
   // Focus state for keyboard and accessibility
   &:focus {
-    outline: 1px dotted #666;
+    outline: none;
   }
 
   // Primary Button Type
@@ -1366,6 +1358,19 @@ footer {
     font-size: @basefont - 2px;
     width:auto;
   }
+  
+  /* APP ROUNDED BUTTONS */
+  &.rounded {
+    margin:2px 4px;
+    text-indent:-9999px;
+    display:inline-block;
+    border:1px solid white;
+    .border-radius(12px);
+    .box-shadow(0px 0px 3px #c0bfbc);
+    width:42px;
+    height:42px;
+    padding:0;
+  }
 }
 
 // Help Firefox not be a jerk about adding extra padding to buttons
@@ -1375,8 +1380,22 @@ input[type=submit].btn {
   	padding: 0;
   	border: 0;
   }
+  
 }
 
+span.counter {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+  .border-radius(17px);
+  color: #FFFFFF;
+  font-size: 10px;
+  position: absolute;
+  right: 130px;
+  text-align: center;
+  text-decoration: none;
+  top: 39px;
+  padding: 7px 5px;
+  line-height: 7px;
+}
 
 // CLOSE ICONS
 // -----------
@@ -1681,6 +1700,7 @@ input[type=submit].btn {
   a {
     color:@white;
     text-decoration:underline;
+    cursor:pointer;
   }
 }
 .twipsy-arrow {
@@ -1700,3 +1720,14 @@ input[type=submit].btn {
 .fade.in {
   opacity: 1;
 }
+
+::-moz-selection {
+	color: #fff;
+	color: rgba(255,255,255,.85);
+	background: @linkColor;
+	}
+::selection {
+	color: #fff;
+	color: rgba(255,255,255,.85);
+	background: @linkColor;
+	}

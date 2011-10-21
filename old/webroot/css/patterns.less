@@ -847,6 +847,7 @@ div.entry {
     left:-45px;
     width:153px;
     a {
+      cursor:pointer;
       text-decoration:none; 
       background:none;
       border:0;
@@ -906,6 +907,24 @@ a.add-tag-link {
 	top:0;
 	&:hover {
 		background:#E4E3DF url(../css/gfx/add_tag_hover.png) no-repeat 10px 7px;
+	}
+}
+
+a.url {
+	width:42px;
+	height:42px;
+	background:#E4E3DF url(../css/gfx/link_normal.png) no-repeat 10px 9px;
+	margin:2px 4px;
+	text-indent:-9999px;
+	display:inline-block;
+	border:1px solid white;
+	.border-radius(12px);
+  .box-shadow(0px 0px 3px #c0bfbc);
+	position:absolute;
+	right:0;
+	top:0;
+	&:hover {
+		background:#E4E3DF url(../css/gfx/link_hover.png) no-repeat 10px 7px;
 	}
 }
 

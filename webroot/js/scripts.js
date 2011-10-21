@@ -5,7 +5,12 @@ $(document).includeReady(function () {
       delayOut: 0
     });
     
-    $("a.url-links")
+    $("span[rel=twipsy]").twipsy({
+      live: true,
+      delayOut: 0
+    });
+    
+    $("a.url")
       .twipsy({
         html: true,
         trigger: focus,
@@ -13,17 +18,23 @@ $(document).includeReady(function () {
           return $(".edit-url-holder").html();
         }
       })
+      
+      $("a.url").toggle(function(){
+        $(this).parent().twipsy('hide');
+      }, function(){
+        $(this).twipsy('hide');
+      });
   
     $("#ImageEditTitle").click(function(){
-      $('.description .field').addClass('hide');
+      $('.description .input').addClass('hide');
       $('#ImageEditDescription').removeClass('hide');
-      $(this).addClass('hide').parent().find('.field').removeClass('hide');
+      $(this).addClass('hide').parent().find('.input').removeClass('hide');
     });
     
     $("#ImageEditDescription").click(function(){
-      $('.page-header .field').addClass('hide');
+      $('.page-header .input').addClass('hide');
       $('#ImageEditTitle').removeClass('hide');
-      $(this).addClass('hide').parent().find('.field').removeClass('hide');
+      $(this).addClass('hide').parent().find('.input').removeClass('hide');
     });
 
     $(".page-header .cancel").click(function(){
