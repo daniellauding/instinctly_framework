@@ -959,15 +959,17 @@ p.no-tags {
     	padding:2px 8px 2px 8px;
     	text-decoration:none;
     	display:inline-block;
-    	width:84%;
+    	width:80%;
     	&:hover{color:#644A7F;}
-    	&.remove-tag {
-    	  color:#bbbab7;
+    	&.remove {
+    	  width:20%;
+    	  color:#644A7F;
       	display:inline-block;
       	padding:2px 8px 2px 0px;
       	cursor:pointer;
       	width:0%;
       	font-size:0.8em;
+      	float:right;
     	  &:hover{color:#696967;}
     	}
     	&:hover {
@@ -975,21 +977,11 @@ p.no-tags {
       }
     }
     &:last-child{border:none}
-    span.remove-tag {
-    	display:inline-block;
-    	padding:0 7px 0 7px;
-    	font-weight:bold;
-    	color:#644A7F;
-    	&:hover {
-      	background:rgba(0,0,0,0.08);
-      	.border-radius(12px);
-      }
-    }
   }
 }
 
 fieldset.add-tags {
-    margin-top: 15px;
+    margin-top: 0px;
     position: relative;
     input {
       padding-right: 35px;
