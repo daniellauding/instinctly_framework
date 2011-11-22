@@ -10,7 +10,7 @@ $(document).includeReady(function () {
       delayOut: 0
     });
     
-    $("a.url")
+    $(".pop a.url")
       .twipsy({
         html: true,
         trigger: focus,
@@ -19,11 +19,21 @@ $(document).includeReady(function () {
         }
       })
       
-      $("a.url").toggle(function(){
+      $(".pop a.url").toggle(function(){
         $(this).parent().twipsy('hide');
       }, function(){
         $(this).twipsy('hide');
       });
+
+$(".add-tag-link").toggle(function(){
+	$("fieldset.add-tags").show();
+	}, function() {
+   	$("fieldset.add-tags").hide();
+});
+
+$("fieldset.add-tags #cancelInput").click(function(){
+   	$("fieldset.add-tags").hide();
+});
   
     $("#ImageEditTitle").click(function(){
       $('.description .input').addClass('hide');

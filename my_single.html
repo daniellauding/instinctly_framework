@@ -1,0 +1,170 @@
+<!doctype html>
+<head>
+	<title>Instinctly</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name"Author" content="Apton">
+	
+	<script src="webroot/js/jquery-1.4.2.min.js"></script>
+	<script src="webroot/js/jquery.include.min.js"></script>
+	<script src="webroot/js/bootstrap-modal.js"></script>
+	<script src="webroot/js/bootstrap-twipsy.js"></script>
+	<script src="webroot/js/bootstrap-popover.js"></script>
+	
+	<script src="webroot/js/scripts.js"></script>
+	
+	
+  <link rel="stylesheet/less" href="webroot/css/imports.less">
+  
+  <script src="webroot/js/less-1.1.3.min.js"></script>
+  
+  <script type="text/javascript" charset="utf-8">
+      less.env = "development";
+      less.watch();
+  </script>
+  
+  <link rel="shortcut icon" href="webroot/favicon.ico">
+	
+</head>
+
+  <header>
+    <span data-src="views/elements/header.html"></span>
+  </header>
+
+	<div class="container">
+    <div class="content single">
+      <div class="page-header">
+        
+        <h1 id="ImageEditTitle">img_4e3fa9210a375asdasdsadasdasdasdasdadadsasd</h1>
+        
+        <div class="input hide">
+          <input type="text" class="large" id="" name="" size="30">
+          <span class="counter">23</span>
+          <a class="btn small submit" href="#">Save</a>
+          or <a href="#" id="cancelTitle" class="cancel">Cancel</a>
+        </div>
+        
+        <span>Uploaded 2011-09-29</span>
+        
+      </div>
+      
+      <div class="page-content">
+        
+        <div class="main">
+          
+              <div class="actions">
+                
+                <div class="toolbar">
+          				<a class="btn rounded add-moodboard" href="#" rel="twipsy" title="Add to Moodboard" data-content="Add to Moodboard">Add to Moodboard</a>
+
+          				<a class="btn rounded view-large" href="/images/view/51" rel="twipsy" title="View All Sizes" data-content="View All Sizes">All sizes</a>
+          				
+          				<a class="btn rounded edit-thumbnail" href="#" rel="twipsy" title="Edit Thumbnail" data-content="Edit Thumbnail">Edit Thumbnail</a>
+          				
+          				<span class="pop" rel="twipsy" title="URL" data-content="URL">
+            				<a href="#" class="btn rounded url">
+                      Permalink
+            				</a>
+            				
+            				<div class="edit-url-holder">
+              				<a data-keyboard="true" data-backdrop="true" data-controls-modal="link">Edit URL</a> or
+              				<a href="" target="_blank" id="ImageOpenUrl">Open URL</a>
+              			</div>
+          				</span>
+          				
+          				<a class="btn rounded like" href="#" rel="twipsy" title="Like" data-content="Like">Like <span>114</span></a>
+          				
+          			</div>
+          			
+          			<div class="select-collection">
+          				<div class="input select">
+          					<label for="ImageCategoryId">Select Collection</label>
+          					<select class="category_options_list" id="ImageCategoryId" name="" selected="selected">
+        						<option value="27" class="collection-12">Whole pages</option>
+          					<option value="27" class="collection-12">Navigations</option>
+                    <option value="27" class="collection-12">Buttons</option>
+                    <option value="27" class="collection-12">Breadcrumbs</option>
+                    <option value="27" class="collection-12">Footers</option>
+                    <option value="27" class="collection-12">Headers</option>
+                    <option value="27" class="collection-12">Blog</option>
+                    <option value="27" class="collection-12">Structure</option>
+          					<option value="-1" class="divider">----------------------------------------------</option>
+          					<option value="-1" class="add-new-collection">Add New Collection</option>
+          					</select>
+          				</div>
+          			</div>
+                
+              </div><!-- end manage -->
+              
+              <div class="big-image">
+          			<div class="big-image-inner">
+          				<div class="thumbnail-image">
+          					<img src="webroot/dummy/big.jpg" class="no-rounded-img">
+          				</div>
+          			</div>
+          		</div>
+          	
+
+          		<div class="description">
+          			<p id="ImageEditDescription">No description added.</p>
+          			
+          			<div class="input hide">
+                  <textarea rows="2" name="data[Image][description]" id="ImageDescId" class="large"></textarea>
+                
+                  <a class="btn small submit" href="#">Save</a>
+                  or <a href="#" id="cancelTitle" class="cancel">Cancel</a>
+                </div>
+              
+            </div>
+          
+        </div>
+        
+        <div class="sidebar">
+          
+          <div class="entry tags">
+      			<div class="entry-header">
+      				<h2>Tags</h2>
+      			</div>
+
+      			<a class="add-tag-link" href="#" rel="twipsy" title="Add tags" data-content="Add tags">Add tags</a>
+
+      			<div class="field">
+      			  
+              <ul class="tagslist">
+
+              	<li class="tag-88"><span class="tag-wrapper"><a href="/tags/view/88">jag</a><a class="remove">x</a></span></li>
+              	<li class="tag-112"><span class="tag-wrapper"><a href="/tags/view/112">lagger</a><a class="remove">x</a></span></li>
+              	<li class="tag-111"><span class="tag-wrapper"><a href="/tags/view/111">taggar</a><a class="remove">x</a></span></li>
+              	<li class="tag-91"><span class="tag-wrapper"><a href="/tags/view/91">till</a><a class="remove">x</a></span></li>
+              	<li class="tag-113"><span class="tag-wrapper"><a href="/tags/view/113">tre</a><a class="remove">x</a></span></li>
+              
+              </ul>
+      				
+      				<p class="no-tags">No tags added yet</p>
+
+      				<div class="add-tags" id="add-tag-field">
+      					<fieldset class="add-tags">
+      						<label for="">Tag</label>
+      						<input type="text" name="data[Tag][tags]" class="large" value="" placeholder="Enter tags">
+      						<a href="#" id="cancelInput">x</a>
+      					</fieldset>
+      				</div>
+      				
+      			</div>
+      		</div>
+      
+          <input type="submit" value="Delete image" name="data[User][submit]" class="btn remove-image" id="">
+                  
+        </div>
+      
+        
+      </div>
+            
+    </div>  
+	</div>
+	
+	<footer>
+    <span data-src="views/elements/footer.html"></span>
+	</footer>
+
+</body>
+</html>
