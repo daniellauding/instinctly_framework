@@ -308,7 +308,7 @@ header {
           rgba(0,0,0,0) 0%,
           rgba(255,255,255,0.1) 100%);
         display:block;
-      	border-top:0px solid #fff;
+      	border-top:0px solid @white;
       }
       &:after {
         content:"";
@@ -330,7 +330,7 @@ header {
           rgba(0,0,0,0) 0%,
           rgba(0,0,0,0.3) 100%);
         display:block;
-      	border-top:0px solid #fff;
+      	border-top:0px solid @white;
       }
     }
     
@@ -440,7 +440,7 @@ header {
         rgba(0,0,0,0) 0%,
         rgba(255,255,255,0.1) 100%);
       display:block;
-    	border-top:0px solid #fff;
+    	border-top:0px solid @white;
     }
     &:after {
       content:"";
@@ -462,31 +462,60 @@ header {
         rgba(0,0,0,0) 0%,
         rgba(0,0,0,0.3) 100%);
       display:block;
-    	border-top:0px solid #fff;
+    	border-top:0px solid @white;
     }
     }
   }
 }
 
-// PAGE HEADERS
+// LOGIN
 // ------------
 
-.hero-unit {
-  background-color: #f5f5f5;
-  margin-bottom: 30px;
-  padding: 60px;
-  .border-radius(6px);
-  h1 {
-    margin-bottom: 0;
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-  p {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: @baseline * 1.5;
-  }
+#user-area {
+    background: @boxDark;
+    border:1px solid @white;
+    .border-radius(12px);
+    .box-shadow(0 0 6px #C0BFBC);
+    display: block;
+    margin: 60px auto 0;
+    padding: 5px 0;
+    position: relative;
+    width: 380px;
+    h2 {
+        padding: 15px 0 15px;
+        text-align: center;
+        width: 100%;
+        color: rgba(0,0,0,0.3);	
+  		font-weight:normal;
+  		font-size:20px;
+  		line-height:25px;
+    }
+    #login {
+        .action-login {
+        }
+    }
+    fieldset {
+        background: @box;
+        border-bottom: 1px solid @white;
+        border-top: 1px solid @white;
+        margin-bottom: 15px;
+        padding: 20px 20px 5px;
+        label {
+            display:none;
+        }
+        input {
+            width: 100%;
+            &#login-username {}
+            &#login-password {
+            width:215px;
+            margin-right:5px;
+            }
+        }
+        .show-forgot-password{font-size:11px}
+    }
+    .actions {
+    margin:25px 34px 20px;
+    }
 }
 
 // PAGE HEADERS
@@ -528,9 +557,9 @@ header {
 
 div.entry {
 	position:relative;
-	background:#EBEAE6;
+	background:@box;
 	padding:0px 0px 5px;
-	border:1px solid #fff;
+	border:1px solid @white;
 	.border-radius(12px);
   .box-shadow(0px 0px 6px #c0bfbc);
 	margin:5px 5px 25px;
@@ -575,12 +604,12 @@ div.entry {
     position:relative;
   	background:transparent;
   	padding:0px 0px 20px;
-  	border:0px solid #fff;
+  	border:0px solid @white;
   	.border-radius(0);
   	.box-shadow(0px 0px 0px #c0bfbc);
   	margin:5px 5px 25px;
   	.entry-header {
-         border:1px solid #fff;
+         border:1px solid @white;
         .box-shadow(0px -1px 5px #c0bfbc);
       	position:relative;
       	margin-bottom:-1px;
@@ -598,7 +627,7 @@ div.entry {
       position:relative;
     	background:#EBEAE6;
     	padding:15px;
-    	border:1px solid #fff;
+    	border:1px solid @white;
     	.border-radius(0px 12px 12px 12px);
     	.box-shadow(0px 0px 6px #c0bfbc);
     	margin:0;
@@ -784,7 +813,7 @@ div.entry {
       float:right;
       width:255px;
     	position:relative;
-    	background:#fff url(../css/gfx/collection-box.png) no-repeat 10px 10px;
+    	background:@white url(../css/gfx/collection-box.png) no-repeat 10px 10px;
     	border:1px solid #d6d5d1;
     	color:#97919e;
     	.border-radius(5px);
@@ -861,7 +890,7 @@ div.entry {
   position:relative;
   .edit-url-holder {
     display:none;
-    background:#fff;
+    background:@white;
     .border-radius(8px);
 /*    .box-shadow(0 2px 0px rgba(0,0,0,.15));*/
     border:2px solid rgba(0,0,0,.3);
@@ -1006,7 +1035,7 @@ fieldset.add-tags {
     #cancelInput {
       background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
       .border-radius(17px);
-      color: #FFFFFF;
+      color: @white;
       font-size: 10px;
       position: absolute;
       right: 14px;
@@ -1026,7 +1055,7 @@ div.big-image {
 	background:#e4e3df;
 	padding:5px 5px 5px 5px;
 	width:auto;
-	border:1px solid #fff;
+	border:1px solid @white;
 	.border-radius(12px);
 	.box-shadow(0px 0px 6px #c0bfbc);
 	margin:9px;
@@ -1084,7 +1113,7 @@ div.item {
 		background:#e4e3df;
 		padding:5px;
 		width:288px;
-		border:1px solid #fff;
+		border:1px solid @white;
 		.border-radius(12px);
 		.box-shadow(0px 0px 6px #c0bfbc);
 		&:hover {
@@ -1347,7 +1376,7 @@ footer {
   	background-image: -moz-linear-gradient(center bottom,#372647 41%,#6E587F 100%);
   	background: -o-linear-gradient(top, #3f2e54, #271d35);
   	border:1px solid #625171;
-  	color:#fff;
+  	color:@white;
   	text-shadow:1px 1px 1px #000;
   	.box-shadow(0 0 0 4px #C5C2C3);
   	&:hover {
@@ -1385,7 +1414,7 @@ footer {
     font-size: 15px;
     width:auto;
     line-height: normal;
-    padding: 11px 18px 12px;
+    padding: 9px 18px 10px;
   }
   &.small {
     padding: 7px 9px 7px;
@@ -1420,7 +1449,7 @@ input[type=submit].btn {
 span.counter {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
   .border-radius(17px);
-  color: #FFFFFF;
+  color: @white;
   font-size: 10px;
   position: absolute;
   right: 130px;
@@ -1756,12 +1785,12 @@ span.counter {
 }
 
 ::-moz-selection {
-	color: #fff;
+	color: @white;
 	color: rgba(255,255,255,.85);
 	background: @linkColor;
 	}
 ::selection {
-	color: #fff;
+	color: @white;
 	color: rgba(255,255,255,.85);
 	background: @linkColor;
 	}

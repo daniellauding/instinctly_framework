@@ -1,0 +1,30 @@
+<form accept-charset="utf-8" action="/users/login" method="post">
+    
+	<h2>Sign In</h2>
+	
+	<fieldset>
+	    
+	    <div class="clearfix">
+          <label for="login-username">E-mail</label>
+            <input type="email" id="login-username" value="" name="username" placeholder="example@me.com">
+        </div>
+        
+        <div class="clearfix">
+          <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" placeholder="Password">
+            <a href="#user/forgot" class="show-forgot-password">Forgot your password?</a>
+        </div>
+        
+        <label for="login-remember-me">
+            <input type="checkbox" value="Remember me" id="login-remember-me" />
+            <span>Keep me signed in</span>
+        </label>
+        
+    </fieldset>
+	
+	<div class="actions">
+    	<a href="#user/signup" class="btn show-signup">Invited? <span>Register here!</span></a>
+    	<input type="submit" value="Sign In" class="btn primary action-login" data-event="login"></input>
+    </div>
+	
+</form>
