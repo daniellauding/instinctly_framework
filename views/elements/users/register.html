@@ -1,0 +1,29 @@
+<form accept-charset="utf-8" action="/users/register" method="post">
+    
+	<h2>Register</h2>
+	
+	<fieldset>
+	    
+	    <div class="clearfix">
+            <label for="signup-username">Username</label>
+            <input type="email" value="" id="signup-username" name="username" placeholder="email@example.com"/>
+        </div>
+        
+        <div class="clearfix">
+            <label for="signup-password">Password</label>
+            <input type="password" value="" id="signup-password" name="password" placeholder="Password"/>
+        </div>
+        
+        <div class="clearfix">
+            <label for="signup-code">Invitation Code</label>
+            <input type="text" maxlength="128" value="" id="signup-code" placeholder="Invitation Code"/>
+        </div>
+        
+    </fieldset>
+	
+	<div class="actions">
+    	<a href="#user/login" class="btn show-login">Already a member? Login</a>
+    	<a href="#" class="btn primary action-signup" data-event="signup">Register</a>
+    </div>
+	
+</form>
