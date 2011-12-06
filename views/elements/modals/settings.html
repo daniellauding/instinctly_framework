@@ -4,64 +4,226 @@
 </div>
 
 <div class="modal-body">
-  <form>
-    
-    <div class="separator">
-      
-      <fieldset>
-        <div class="clearfix">
-          <label for="">Name</label>
-          <div class="input">
-            <input type="text" size="30" name="" id="" class="large">
-          </div>
-        </div>  
-      </fieldset>
 
-      <fieldset>  
-        <div class="clearfix">
-          <label for="">Email</label>
-          <div class="input">
-            <input type="text" size="30" name="" id="" class="large">
-          </div>
-        </div>
-      </fieldset>
-      
-    </div>
+	<ul class="tab-row">
+		<li class="tab profile active">My info</li>
+		<li class="tab password">Password</li>
+		<li class="tab notifications">Notifications</li>
+		<li class="tab social">Social</li>
+		<li class="tab invite active">Invites</li>
+	</ul>
 
-    <div class="separator">
-      
-      <fieldset>  
-        <div class="clearfix">
-          <label for="">Old Password</label>
-          <div class="input">
-            <input type="text" size="30" name="" id="" class="large">
-          </div>
-        </div>
-      </fieldset>
-    
-      <fieldset>  
-        <div class="clearfix">
-          <label for="">New Password</label>
-          <div class="input">
-            <input type="text" size="30" name="" id="" class="large">
-          </div>
-        </div>
-      </fieldset>
-    
-      <fieldset>  
-        <div class="clearfix">
-          <label for="">Confirm</label>
-          <div class="input">
-            <input type="text" size="30" name="" id="" class="large">
-          </div>
-        </div>
-      </fieldset>
+	<div class="tab-panes">
+	
+		<div class="pane profile" style="display:none;">
+		
+			<form>
 
-    </div>
-    
-  </form>
-</div>
+			  <div class="separator">
 
-<div class="modal-footer">
-  <a href="#" class="btn small">Save</a>
+			    <fieldset>
+			      <div class="clearfix">
+			        <label for="">Name</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>  
+			    </fieldset>
+
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Email</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>
+			    </fieldset>
+
+			  </div>
+
+			  <div class="separator">
+
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Location</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>
+			    </fieldset>
+
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Bio </label>
+			        <div class="input">
+			          <textarea size="30" name="bio" id="" class="large"></textarea>
+			        </div>
+			      </div>
+			    </fieldset>
+
+			  </div>
+
+			</form>
+		
+		</div>
+		
+		<div class="pane password" style="display:none;">
+		
+			<form>
+
+		    <fieldset>  
+		      <div class="clearfix">
+		        <label for="">Old Password</label>
+		        <div class="input">
+		          <input type="text" size="30" name="" id="" class="large">
+		        </div>
+		      </div>
+		    </fieldset>
+
+		    <fieldset>  
+		      <div class="clearfix">
+		        <label for="">New Password</label>
+		        <div class="input">
+		          <input type="text" size="30" name="" id="" class="large">
+		        </div>
+		      </div>
+		    </fieldset>
+
+		    <fieldset>  
+		      <div class="clearfix">
+		        <label for="">Confirm</label>
+		        <div class="input">
+		          <input type="text" size="30" name="" id="" class="large">
+		        </div>
+		      </div>
+		    </fieldset>
+
+		</form>
+		
+		  <div class="clearfix">
+			<a class="btn secondary small">Change password</a>
+	      </div>
+		
+		</div>
+		
+		<div class="pane notifications" style="display:none;"></div>
+		
+		<div class="pane social"  style="display:none;">
+		
+			<form>
+
+			  <div class="separator">
+
+			    <fieldset>
+			      <div class="clearfix">
+			        <label for="">Your Homepage</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>  
+			    </fieldset>
+
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Twitter</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>
+			    </fieldset>
+			
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Dribbble</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>
+			    </fieldset>
+			
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Facebook</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>
+			    </fieldset>
+			
+			    <fieldset>  
+			      <div class="clearfix">
+			        <label for="">Google+</label>
+			        <div class="input">
+			          <input type="text" size="30" name="" id="" class="large">
+			        </div>
+			      </div>
+			    </fieldset>
+
+			  </div>
+
+			</form>
+		
+		</div>
+		
+		<div class="pane invites">
+			<form>
+
+		    <fieldset>
+		      <div class="clearfix">
+		        <label for="">Email address</label>
+		        <div class="input">
+		          <input type="text" size="30" name="" id="" class="medium">
+		          <a href="#" class="btn small">Send invite</a>
+		          <span class="help-block">You have 7 invites left.</span>
+		        </div>
+		      </div>  
+		    </fieldset>
+
+		  </form>
+
+		  <table class="zebra-striped invite-list">
+		    <thead>
+		      <tr>
+		        <th class="email">Email</th>
+		        <th class="status">Status</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>
+		          daniel.lauding@hyperisland.se
+		            <span class="help-block">ASDASDAD!13!"#!#"</span>
+		        </td>
+		        <td>
+		            invited 21 Jun, 2011
+		            <span class="help-block">joined 24 Jun, 2011</span>
+		        </td>
+		      </tr>
+		      <tr>
+		         <td>
+		           sixteng@kth.se
+		             <span class="help-block">ASDASDAD!13!"#!#"</span>
+		         </td>
+		         <td>
+		             invited 21 Jun, 2011
+		             <a class="remove">x</a>
+		         </td>
+		       </tr>
+		       <tr>
+		          <td>
+		            janne@lauding.se
+		              <span class="help-block">ASDASDAD!13!"#!#"</span>
+		          </td>
+		          <td>
+		              invited 21 Jun, 2011
+		              <span class="help-block">joined 24 Jun, 2011</span>
+		          </td>
+		        </tr>
+		    </tbody>
+		  </table>
+		</div>
+		
+	
+	</div>
+
 </div>

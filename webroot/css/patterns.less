@@ -564,6 +564,80 @@ header {
   clear: both;
 }
 
+// MODAL TABS
+// ------------
+
+.tab-row {
+	border-top:1px solid #322a39;
+	background:#2a1f31;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	left:0;
+	top:0;
+	width:85px;
+	display:block;
+	height:100%;
+	.box-shadow(1px 0 3px #2a1f31 inset);
+	font-size:@basefont - 2px;
+	.border-radius(0px 0px 0px 6px);
+	li {
+		background:#271d2e;
+		text-align:center;
+		text-shadow:0 1px 0 rgba(0, 0, 0, 0.5);
+		height:65px;
+		.box-shadow(0 -1px 0 0px #16101b inset);
+		border-bottom:1px solid #362d3d;
+		line-height:9.3em;
+	&.active {
+		background:#1f1725;
+		color:@white;
+	}
+	&.profile {
+		background:transparent url(../css/gfx/sprite.png) no-repeat 0 0px;
+		&:hover {background-color:#1f1725;cursor:pointer;}
+		&.active {
+			background:#1f1725 url(../css/gfx/sprite.png) no-repeat 0 -72px;
+		}
+	}
+	&.password {
+		background:transparent url(../css/gfx/sprite.png) no-repeat -73px 0;
+		&:hover {background-color:#1f1725;cursor:pointer;}
+		&.active {
+			background:#1f1725 url(../css/gfx/sprite.png) no-repeat -73px -71px;
+		}
+	}
+	&.notifications {
+		background:transparent url(../css/gfx/sprite.png) no-repeat -142px 0px;
+		&:hover {background-color:#1f1725;cursor:pointer;}
+		&.active {
+			background:#1f1725 url(../css/gfx/sprite.png) no-repeat -142px -71px;
+		}
+	}
+	&.social {
+		background:transparent url(../css/gfx/sprite.png) no-repeat -213px 0px;
+		&:hover {background-color:#1f1725;cursor:pointer;}
+		&.active {
+			background:#1f1725 url(../css/gfx/sprite.png) no-repeat -213px -74px;
+		}
+	}
+	&.invite {
+		background:transparent url(../css/gfx/sprite.png) no-repeat -275px 0px;
+		&:hover {background-color:#1f1725;cursor:pointer;}
+		&.active {
+			background:#1f1725 url(../css/gfx/sprite.png) no-repeat -274px -70px;
+		}
+	}
+	}
+}
+
+.tab-panes {
+	margin-left:100px;
+	min-height:330px;
+	.medium {width:73%;}
+}
+
 // BOXES
 // ------------
 
@@ -1581,6 +1655,7 @@ span.counter {
 }
 .modal-body {
   padding: 15px;
+  position:relative;
 }
 .modal-footer {
   background-color: #f5f5f5;
