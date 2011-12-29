@@ -7,20 +7,29 @@
 
   	<ul class="nav"> 
   	    	  
-  	  <li class="new-upload"><a href="#">Upload</a></li>
-  	  <li class="new-moodboard"><a href="#">Create Moodboard</a></li>
+  	  <li class="upload"><a href="#">+</a>
+  	      	<ul>
+			    <li class="trigger-ext"><a href="#">Item</a></li>
+			    <li><a href="#">Item</a></li>
+			    <li><a href="#">Item</a></li>
+			    <li><a href="#">From hard drive...</a></li>
+			</ul>
+      </li>
+      
+      	<li class="search ext">
+    		<form>
+    			<fieldset>
+    			<div class="input">
+    				<input type="text" value="Search" onclick="this.value=''" name="data[Image][text]" id="search-external"/> 
+    				<input type="button" value="Find" id="search-btn"/> 
+    			</div>
+    			</fieldset>
+    		</form>
+    	</li>
+  	      
+  	  <li class="moodboard"><a href="#">Moodboard</a></li>
   	  
-  	  <li class="my-tags"><a href="#">Tags</a></li>
-  	  
-  	  <li class="my-collections dropdown"> 
-  			<a href="">Browse</a> 
-  				<ul>
-  				  <li><a href="../../collections.html">People</a></li>
-  				  <li><a href="../../collections.html">Collections</a></li>
-  				  <li><a href="../../collections.html">Tags</a></li>
-  				  <li><a href="../../collections.html">Moodboards</a></li>
-  				</ul> 
-  		</li>
+  	  <li class="browse"><a href="">Browse</a></li>
   		
   		<li class="search">
   			<form>
@@ -50,6 +59,10 @@
 </div>
 
 <!-- Load modal windows -->
+
+<div class="curtain">
+  <span data-src="../elements/curtain.html"></span>
+</div>
 
 <div id="settings" class="modal hide">
   <span data-src="../elements/modals/settings.html"></span>
